@@ -1,10 +1,11 @@
 /* VARIABLES */
 
 :root {
-    --main-text-color: #9DC5BB;
-    --main-bg-color: #254E70;
-    --secondary-bg-color: #B9314F;
-	--error-color: #F24236;
+    --main-text-color: #f2ebe5;
+    --main-bg-color: #2b262d;
+    --secondary-bg-color: #9f496e;
+    --secondary-text-color: #a29894;
+	--error-color: red;
 }
 
 body {
@@ -168,6 +169,10 @@ input:invalid, textarea:invalid {
     border-bottom: 2px solid var(--error-color);
 }
 
+::placeholder {
+	color: var(--secondary-text-color);
+}
+
 textarea {
     height: 6rem;
 }
@@ -189,6 +194,12 @@ button {
 # BODY #
 ########
 */
+
+h1 {
+	padding: 5rem;
+	max-width: 60%;
+	margin: auto;
+}
 
 section {
 	width: 100%;
