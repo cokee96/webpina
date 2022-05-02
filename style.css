@@ -197,6 +197,10 @@ section {
 	align-items: center;
 }
 
+section div {
+	padding: 3rem;
+}
+
 figure {
 	max-width: 80%;
 }
@@ -210,4 +214,21 @@ figure img {
 	object-fit: contain;
 	width: 100%;
 	max-height: 70vh;
+}
+
+.medallones {
+	padding: 3rem;
+	max-width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.medallones img {
+	padding: .3rem;
+	max-width: 30%;
+	object-fit: contain;
+	flex-grow: 1;
 }
