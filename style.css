@@ -4,6 +4,7 @@
     --main-text-color: #9DC5BB;
     --main-bg-color: #254E70;
     --secondary-bg-color: #B9314F;
+	--error-color: #F24236;
 }
 
 body {
@@ -67,7 +68,7 @@ nav li{
     margin: 0 1em;
 }
 
-label:before{
+nav label:before{
 	height:2px;
 	width:20px;
 	background:var(--main-text-color);
@@ -81,7 +82,7 @@ label:before{
 	opacity:0.5;
 }
 
-label{
+nav label{
 	display:none;
 	background:var(--secondary-bg-color);
 	color:var(--main-text-color);  
@@ -110,7 +111,7 @@ input[type="checkbox"]{
 		/* display: none; */
 	}
 
-	label {
+	nav label {
 		display: block;
 		align-self: flex-end;
 		display: initial;
@@ -118,3 +119,66 @@ input[type="checkbox"]{
 		cursor: pointer;
 	}
   }
+
+  /*
+################
+# Contact form #
+################
+*/
+
+.contact-form {
+    padding: 3rem;
+}
+
+.contact-form ul {
+    max-width: 70ch;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.contact-form-item {
+    min-width: 10rem;
+    flex-grow: 1;
+}
+
+.full {
+    flex-basis: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1em .5em;
+
+    box-sizing: border-box;
+    border-radius: 3px;
+
+    background-color: var(--secondary-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+input:invalid, textarea:invalid {
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid var(--error-color);
+}
+
+textarea {
+    height: 6rem;
+}
+  
+button {
+    padding: 1em;
+    min-width: 10rem;
+    float: right;
+
+    cursor: pointer;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    border: 2px solid var(--main-text-color);
+}
