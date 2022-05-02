@@ -66,3 +66,55 @@ nav li{
     float: right;
     margin: 0 1em;
 }
+
+label:before{
+	height:2px;
+	width:20px;
+	background:var(--main-text-color);
+	display:inline-block;
+	content:"";
+	box-shadow:0px -5px 0px 0px  var(--main-text-color),
+			   0px -10px 0px 0px var(--main-text-color);
+	/* margin-right:10px; */
+	transition:all .5s;
+	position:relative;
+	opacity:0.5;
+}
+
+label{
+	display:none;
+	background:var(--secondary-bg-color);
+	color:var(--main-text-color);  
+	cursor:pointer; 
+}
+
+input[type="checkbox"]{
+	visibility:hidden;
+	position:absolute;
+}
+
+@media only screen and (max-width: 900px) {
+	nav,
+	nav ul,
+	nav li {
+	  flex-direction: column;
+	}
+
+	#collapse:checked ~ ul{
+		display:none;
+		margin-top:0; 
+	}
+
+	nav li {
+		padding: 1rem;
+		/* display: none; */
+	}
+
+	label {
+		display: block;
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+  }
