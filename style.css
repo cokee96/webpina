@@ -199,10 +199,11 @@ section {
 
 section div {
 	padding: 3rem;
+	max-width: 70ch;
 }
 
 figure {
-	max-width: 80%;
+	max-width: 70ch;
 }
 
 figcaption {
@@ -217,6 +218,7 @@ figure img {
 }
 
 .medallones {
+	padding: 3rem;
 	max-width: 60%;
 	display: flex;
 	flex-wrap: wrap;
@@ -225,9 +227,14 @@ figure img {
 	
 }
 
-.medallones img {
+.medallones li {
 	padding: .3rem;
-	max-width: 30%;
-	object-fit: contain;
 	flex-grow: 1;
+	max-width: 30%;
+
+}
+
+.medallones img {
+	width: 100%;
+	object-fit: contain;
 }
