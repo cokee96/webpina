@@ -197,16 +197,37 @@ section {
 	align-items: center;
 }
 
+section div {
+	padding: 3rem;
+}
+
 figure {
 	max-width: 80%;
-	max-height: 800px;
 }
 
 figcaption {
 	text-align: center;
+	padding: 1rem;
 }
 
 figure img {
+	object-fit: contain;
 	width: 100%;
-	max-height: 200px;
+	max-height: 70vh;
+}
+
+.medallones {
+	max-width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.medallones img {
+	padding: .3rem;
+	max-width: 30%;
+	object-fit: contain;
+	flex-grow: 1;
 }
