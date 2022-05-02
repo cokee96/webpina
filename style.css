@@ -199,14 +199,15 @@ section {
 
 figure {
 	max-width: 80%;
-	max-height: 800px;
 }
 
 figcaption {
 	text-align: center;
+	padding: 1rem;
 }
 
 figure img {
+	object-fit: contain;
 	width: 100%;
-	max-height: 200px;
+	max-height: 70vh;
 }
