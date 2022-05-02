@@ -8,9 +8,28 @@
     <meta name="description" content="Página de la Iglesia Parroquial de San Miguel Arcángel.">
 
     <title>Iglesia Parroquial de San Miguel Arcángel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
       <h1>Bienvenido/a!</h1>
+      <form class="contact-form" action="contact.php" method="post">
+        <ul>
+            <li class="contact-form-item margin-right">
+                <label for="contact-name"></label>
+                <input id="contact-name" type="text"  placeholder="Name">
+            </li>
+            <li class="contact-form-item">
+                <label for="contact-email"></label>
+                <input id="contact-email" type="text"  placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </li>
+            <li class="contact-form-item full">
+                <label for="contact-message"></label>
+                <textarea id="contact-message" placeholder="Write your message here" required></textarea>
+            </li>
+            <li class="contact-form-item full">
+                <button type="submit">Send message</button>
+            </li>
+        </ul>
+    </form>
   </body>
 </html>
