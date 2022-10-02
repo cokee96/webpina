@@ -3,14 +3,13 @@ version: "3"
 networks:
   web:
     external: true
-  
+
 services:
   webpina:
     build: .
     labels:
-      - traefik.http.routers.webpina.rule=Host(`sanmiguelpiña.com`)
+      - traefik.http.routers.webpina.rule=Host(`xn--sanmiguelpia-khb.com`)
       - traefik.http.routers.webpina.tls=true
       - traefik.http.routers.webpina.tls.certresolver=lets-encrypt
-      - traefik.port=80
     networks:
       - web
